@@ -10,3 +10,9 @@ knn = KNeighborsClassifier(n_neighbors=6)
 # Fit the classifier to the data
 knn.fit(X, y)
 
+
+# Predict the labels for the X_new
+y_pred = knn.predict(X_new)
+
+# Print the predictions
+print("Predictions: {}".format(y_pred)) 
