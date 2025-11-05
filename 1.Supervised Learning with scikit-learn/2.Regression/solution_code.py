@@ -28,3 +28,20 @@ reg.fit(X, y)
 predictions = reg.predict(X)
 
 print(predictions[:5])
+
+
+####### Visualizing a linear regression model ##########
+# Import matplotlib.pyplot
+import matplotlib.pyplot as plt
+
+# Create scatter plot
+plt.scatter(X, y, color="blue")
+
+# Create line plot
+plt.plot(X, predictions, color="red")
+plt.xlabel("Radio Expenditure ($)")
+plt.ylabel("Sales ($)")
+
+# Display the plot
+plt.show()
+
